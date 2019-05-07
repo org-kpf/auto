@@ -1,0 +1,19 @@
+*** Settings ***
+Library           EBS.py
+
+*** Variables ***
+@{admin_ip}       10.0.11.18    10.0.11.19    10.0.11.20
+${server_user}    root
+${server_password}    Password@_
+@{publicr_ip}     10.0.21.18    10.0.21.19    10.0.21.20
+@{gateway_ip}     10.0.21.18    10.0.21.19    10.0.21.20
+@{cluster_ip}     10.0.21.18    10.0.21.19    10.0.21.20
+${admin_user}     admin    # 登录用户名
+${user_password}    admin    # 登录密码
+${bmc_user}       admin
+${bmc_password}    Password@_
+${bmc_net}        110
+${sleepTime_S}    60
+${sleepTime_L}    600
+
+*** Keywords ***

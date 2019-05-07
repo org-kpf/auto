@@ -1,0 +1,5 @@
+hd=default,vdbench=/root/vdbench/,user=root,shell=ssh
+hd=hd1,system=10.0.11.126
+fsd=fsd1,anchor=/mnt/cifs_share,depth=2,width=2,files=2,size=1G
+fwd=fwd1,host=hd1,fsd=fsd1,operation=write,xfersize=4k,fileio=sequential,fileselect=random,threads=2
+rd=rd1,fwd=fwd*,fwdrate=max,format=yes,elapsed=1000,interval=1

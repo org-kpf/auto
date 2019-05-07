@@ -1,0 +1,14 @@
+*** Variables ***
+@{client_ip}      10.0.11.126
+${client_user}    root
+${client_password}    redhat
+${path}           /home/output/
+${win_ip}         10.0.11.129
+${win_user}       administrator
+${win_password}    xsky@2018
+${vdbench_home}    /root/vdbench/
+${threads}        32
+${wd}             wd=wd*,sd=sd*,seekpct=100,rdpct=70,xfersize=8k\n
+${rd}             rd=rd1,wd=wd*,iorate=max,elapse=604800000,maxdata=4000G,interval=1,warmup=1\n
+${size}           1G
+${filename}       vdbench_param

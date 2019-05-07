@@ -1,0 +1,7 @@
+hd=default,vdbench=/root/vdbench/,user=root,shell=ssh
+hd=hd126,system=10.0.11.126
+sd=sd1,hd=hd126,lun=Apr 23 20:15:46 | mpatht: map in use,threads=32,size=1G,openflags=o_direct
+sd=sd2,hd=hd126,lun=Apr 23 20:15:46 | failed to remove multipath map mpatht,threads=32,size=1G,openflags=o_direct
+sd=sd3,hd=hd126,lun=/dev/mapper/mpatht,threads=32,size=1G,openflags=o_direct
+wd=wd*,sd=sd*,seekpct=100,rdpct=70,xfersize=8k
+rd=rd1,wd=wd*,iorate=max,elapse=604800000,maxdata=4000G,interval=1,warmup=1

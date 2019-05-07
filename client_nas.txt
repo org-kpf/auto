@@ -1,0 +1,20 @@
+*** Variables ***
+@{client_nas_ip}    10.0.11.126
+${client_nas_user}    root
+${client_nas_password}    redhat
+${cifs_share_address}    //10.0.21.101/cifs
+${share_mount}    /mnt/cifs_share
+${username}       user01
+${password}       password
+${vdbench_home}    /root/vdbench/
+${depth}          2
+${width}          2
+${files}          2
+${size}           128k
+${fwd}            fwd=fwd1,host=hd1,fsd=fsd1,operation=write,xfersize=4k,fileio=sequential,fileselect=random,threads=2\n
+${frd}            rd=rd1,fwd=fwd*,fwdrate=max,format=yes,elapsed=1000,interval=1
+${filename_nas}    vdbench_param_file
+${nfs_share_address}    10.0.21.101:/sdsfs/filename/
+${vers}           3
+${mode}           sync
+${cifs_vers}      2.1

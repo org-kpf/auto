@@ -1,0 +1,13 @@
+[global]
+rw=rw
+thread
+size=5GB
+group_reporting
+offset=0
+
+[job1]
+filename=/dev/sdf
+
+[job2]
+filename=/dev/sdg
+

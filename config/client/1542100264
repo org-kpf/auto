@@ -1,0 +1,10 @@
+[global]
+rw=rw
+thread
+size=10GB
+group_reporting
+offset=0
+
+[job1]
+filename=/dev/sdj
+
